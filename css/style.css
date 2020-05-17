@@ -1,4 +1,5 @@
 :root {
+
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
@@ -6,38 +7,126 @@
 
 }
 
-html {
-    box-sizing: border-box;
-}
-
-*,
-* ::before,
-* ::after {
-    box-sizing: inherit;
-}
 body{
     color: var(--primary-text-color);
     background-color: var(--primary-white-color);
     font-family:'Roboto', sans-serif;
-    letter-spacing: 2%;
+    letter-spacing: 0.02em;
     font-size: 14px;
+
     margin: 0;
 }
+
 h1, h2, h3 {
     color: var(--title-text-color);
 }
+
+.container {
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 1230px;
+}
+
+/* button  все общие стили для всех кнопок*/
+
+
+.button {
+
+    display: inline-block;
+    
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: var(--primary-white-color);
+
+    min-width: 200px;
+    height: 50px;
+    border: transparent;
+    border-radius: 4px;
+
+    background-color: var(--accent-color);
+
+    padding: 10px 23px; 
+    
+}
+
+.radio-button-primary {
+
+    display: inline-block;
+
+    background-color: var(--accent-color);
+
+    color: var(--primary-white-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+
+    padding: 6px 22px;
+    min-width: 73px;
+    height: 38px;
+    border-radius: 4px;
+    border-color: transparent;
+
+}
+
+.radio-button-secondary {
+
+    display: inline-block;
+
+    background-color: #F5F4FA;
+
+    color: var(--title-text-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+
+    padding: 6px 22px;
+    min-width: 73px;
+    height: 38px;
+    border-radius: 4px;
+    border-color: transparent;
+
+}
+
+/* утилиты */
+
+.list {
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
  /*  header */
+
+.container.main-nav {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
+
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     text-decoration: none;
     letter-spacing: 0.03em;
+
     color: var(--title-text-color);
 }
 
 .logo:hover,
 .logo:focus {
+
     color: var(--accent-color);
 }
 
@@ -45,56 +134,109 @@ h1, h2, h3 {
     color: #2196F3;
 }
 
+.site-nav {
+
+    display: flex;
+
+    margin-left: 80px;
+}
+
+.site-nav .item +.item {
+    margin-left: 45px;
+}
+
+
 .site-nav-links:hover,
 .site-nav-links:focus {
+
     color: #2196F3;
 }
 
 .site-nav-links {
+    display: block;
+
     text-decoration: none;
     
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    letter-spacing: 0.02em;
 
-    color: var(--title-text-color);
-
-    
+    color: var(--title-text-color);   
 }
-.contact-nav-links{
+
+.contacts-nav {
+
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts-nav .item +.item {
+
+    margin-left: 30px;
+
+}
+.contact-nav-links {
+
     text-decoration: none;
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    
+    line-height: 16px; 
 }
 
 .contact-nav-links:hover,
 .contact-nav-links:focus {
+
     color: var(--accent-color);
 }
 
 /* hero */
 .hero-title {
+
     text-align: center;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 6px;
+
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.hero.container {
+
+    height: 600px;
+    text-align: center;
+
+    padding-top: 206px;
+    padding-bottom: 200px;
+}
+
+/* Наши преимущества */
+
+
+.section-feauter-title {
+
+    margin: 0;
 }
 
 
-/* Наши преимущества */
+.feauter-image {
+    margin-bottom: 50px;
+}
+
+
 .feauter-title {
+
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
 
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
+
 
 .feauter-description {
     font-weight: 400;
@@ -102,14 +244,34 @@ h1, h2, h3 {
     line-height: 24px;
     letter-spacing: 0.03em;
 
+    margin:0;
+
+
+}
+.feauter .container {
+
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
+
 /* Чем мы занимаемся */
+
+.aboutus .container {
+
+    padding-bottom: 94px;
+}
+
+
 .aboutus-title {
+
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     letter-spacing: 0.03em;
+
+    margin-top: 0px;
+    margin-bottom: 50px;
     }
 
 
@@ -121,68 +283,113 @@ h1, h2, h3 {
 } */
 
 .aboutus-subtitle {
+
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
+    margin: 0;
 }
 
 /* Наша команда */
+
+.team .container {
+
+   padding-top: 94px;
+   padding-bottom: 94px;
+
+}
+
+
 .team-title {
+
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     letter-spacing: 0.03em;
+
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .team-name {
+
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.03em;
+
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.team-photo {
+
+    margin-bottom: 30px;
 }
 
 .team-profession {
+
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.03em;
+    margin-bottom: 16px;
+}
 
+.socialmedia a {
+
+    padding-bottom: 24px;
 }
 
 .socialmedia a:hover,
 .socialmedia a:focus {
- 
+
     color: var(--accent-color);
+
 }
 
 /* Постоянные клиенты */
+
+.clients .container {
+    
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .clients-title {
 
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     letter-spacing: 0.03em;
+    margin-top: 0px;
+    margin-bottom: 50px;
 }
 
 .clients-link a:hover,
 .clients-link a:focus {
 
     color: var(--accent-color);
-
 }
 
 /* футер */
 
+.footer .container {
+
+    padding-top: 48px;
+    padding-bottom: 60px;
+}
 .logo.footer {
 
     font-size: 22px;
-
+    margin-bottom: 10px;
 }
 
 .footer-socialmedia.list a {
+
     color: var(--primary-white-color);
 }
 
@@ -193,6 +400,7 @@ h1, h2, h3 {
 }
 
 .address {
+
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;
@@ -201,11 +409,19 @@ h1, h2, h3 {
 
     color:var(--primary-white-color);
 
+    margin-bottom: 28px;
+
+}
+
+.adress-link {
+
+    margin-bottom: 9 px;
 }
 
 .address a {
 
     color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
 }
 
 .address a:hover,
@@ -216,12 +432,15 @@ h1, h2, h3 {
 
 
 .joinus {
+
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
 
     color: var(--primary-white-color);
+
+    margin-bottom: 21px;
 }
 
 
@@ -233,6 +452,8 @@ h1, h2, h3 {
     letter-spacing: 0.03em;
 
     color: var(--primary-white-color);
+
+    margin-bottom: 21px;    
 }
 
 
@@ -243,17 +464,40 @@ portfolio
 
 */
 
-.button.primary.radio:hover,
-.button.primary.radio:focus {
+.container.portfolio {
+
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
+
+.portfolio-title {
+    margin: 0;
+}
+
+.filter.list {
+    margin-bottom: 34px;
+}
+
+
+
+.radio-button-primary:hover,
+.radio-button-primary:focus {
 
     color:var(--accent-color)
 }
 
-.button.secondary.radio:hover,
-.button.secondary.radio:focus {
+.radio-button-secondary:hover,
+.radio-button-secondary:focus {
 
     color:var(--accent-color)
 }
+
+.category-image {
+
+    margin-bottom: 20px;
+}
+
 
 .categories-title {
 
@@ -261,6 +505,15 @@ portfolio
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 0.06em;
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+
+.category-name {
+
+    margin-top: 0px;
+    margin-bottom: 20px;
+    
 }
 
 .categories.list p{
@@ -273,49 +526,9 @@ portfolio
 
 
 
+   
 
 
 
 
 
-/* button */
-
-
-.button {
-
-    display: inline-block;
-    
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 26px;
-    letter-spacing: 0.03em;
-}
-
-.button.primary{
-
-    background-color: var(--accent-color);
-
-    color: var(--primary-white-color);
-    text-decoration: none;
-    font-size: 16px ;
-    font-weight: 700 ;
-    line-height: 30px;
-    letter-spacing: 0.06em;
-
-    padding: 10px 23px;
-
-}
-
-.button.secondary{
-
-    background-color: #F5F4FA;
-    color: var(--title-text-color);
-
-}
-
-.list {
-
-    list-style: none;
-
-}
