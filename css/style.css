@@ -60,28 +60,7 @@ h2, h3 {
     
 }
 
-.radio-button-primary {
-
-    display: inline-block;
-
-    background-color: var(--accent-color);
-
-    color: var(--primary-white-color);
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 26px;
-    letter-spacing: 0.03em;
-
-    padding: 6px 22px;
-    min-width: 73px;
-    height: 38px;
-    border-radius: 4px;
-    border-color: transparent;
-
-}
-
-.radio-button-secondary {
+.radio-button {
 
     display: inline-block;
 
@@ -678,19 +657,12 @@ portfolio
 }
 
 
-.radio-button-primary:hover,
-.radio-button-primary:focus {
+.radio-button:hover,
+.radio-button:focus {
 
-    color:var(--accent-color)
+    background-color:var(--accent-color);
+    color: var(--primary-white-color);
 }
-
-.radio-button-secondary:hover,
-.radio-button-secondary:focus {
-
-    color:var(--accent-color)
-}
-
-
 
 
 /* portfolio items */
