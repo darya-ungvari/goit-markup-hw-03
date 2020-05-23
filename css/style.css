@@ -218,10 +218,15 @@ h2, h3 {
   
 }
 
-.section-feauter-title {
+.vissually-hidden {
 
-    margin: 0;
-    color: transparent;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .feauter-points  {
@@ -636,10 +641,6 @@ portfolio
     padding-top: 94px;
     padding-bottom: 94px;
 
-}
-
-.portfolio-title {
-    margin: 0;
 }
 
 .filter.list {
