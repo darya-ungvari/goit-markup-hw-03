@@ -134,6 +134,12 @@ h2, h3 {
     margin-left: 45px;
 }
 
+.site-nav-links.active {
+
+    color: var(--accent-color);
+
+}
+
 
 .site-nav-links:hover,
 .site-nav-links:focus {
