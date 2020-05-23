@@ -551,7 +551,7 @@ h2, h3 {
 
 .footer-joinus {
 
-    width: 207px;
+    width: 206px;
     
 }
 
@@ -618,6 +618,7 @@ h2, h3 {
 
     padding-top: 18px;
     padding-bottom: 21px;
+    margin: 0;
 
     font-weight: 500;
     letter-spacing: 0.03em;
